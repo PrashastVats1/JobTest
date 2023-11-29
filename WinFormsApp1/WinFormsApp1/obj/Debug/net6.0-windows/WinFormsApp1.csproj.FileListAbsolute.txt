@@ -22,3 +22,4 @@ D:\Mphasis\Job_Assignment\WinFormsApp1\WinFormsApp1\bin\Debug\net6.0-windows\run
 D:\Mphasis\Job_Assignment\WinFormsApp1\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Mphasis\Job_Assignment\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
 D:\Mphasis\Job_Assignment\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
+D:\Mphasis\Job_Assignment\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form2.resources

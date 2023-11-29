@@ -166,5 +166,6 @@
         private TextBox textBox4;
         private TextBox textBox5;
         private Button button1;
+        private ToolTip toolTip1;
     }
 }
