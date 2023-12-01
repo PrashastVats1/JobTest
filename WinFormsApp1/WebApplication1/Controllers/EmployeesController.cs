@@ -17,7 +17,8 @@ namespace WebApplication1.Controllers
         // GET: Employees
         public ActionResult Index()
         {
-            return View(db.Employees.ToList());
+            var employees = db.Employees.Include(e => e.JobTitle);
+            return View(employees.ToList());
         }
 
         // GET: Employees/Details/5
@@ -38,6 +39,7 @@ namespace WebApplication1.Controllers
         // GET: Employees/Create
         public ActionResult Create()
         {
+            ViewBag.JobTitleID = new SelectList(db.JobTitles, "JobTitleID", "Title");
             return View();
         }
 
@@ -46,7 +48,7 @@ namespace WebApplication1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EmployeeID,FirstName,LastName,MobileNo,JobTitle,Salary")] Employee employee)
+        public ActionResult Create([Bind(Include = "EmployeeID,FirstName,LastName,MobileNo,Salary,JobTitleID")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +57,7 @@ namespace WebApplication1.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.JobTitleID = new SelectList(db.JobTitles, "JobTitleID", "Title", employee.JobTitleID);
             return View(employee);
         }
 
@@ -70,6 +73,7 @@ namespace WebApplication1.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.JobTitleID = new SelectList(db.JobTitles, "JobTitleID", "Title", employee.JobTitleID);
             return View(employee);
         }
 
@@ -78,7 +82,7 @@ namespace WebApplication1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EmployeeID,FirstName,LastName,MobileNo,JobTitle,Salary")] Employee employee)
+        public ActionResult Edit([Bind(Include = "EmployeeID,FirstName,LastName,MobileNo,Salary,JobTitleID")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +90,7 @@ namespace WebApplication1.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.JobTitleID = new SelectList(db.JobTitles, "JobTitleID", "Title", employee.JobTitleID);
             return View(employee);
         }
 

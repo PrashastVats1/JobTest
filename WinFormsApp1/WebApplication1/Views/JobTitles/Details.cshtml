@@ -1,0 +1,28 @@
+﻿@model WebApplication1.Models.JobTitle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="container">
+    <h2>Details</h2>
+
+    <div>
+        <h4>JobTitle</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+        </dl>
+    </div>
+
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.JobTitleID }, new { @class = "btn btn-primary" }) |
+        @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-secondary" })
+    </p>
+</div>

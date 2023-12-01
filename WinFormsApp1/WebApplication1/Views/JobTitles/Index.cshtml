@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebApplication1.Models.JobTitle>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create", new { @class = "btn btn-primary" })
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.JobTitleID }, new { @class = "btn btn-warning" }) 
+                        @Html.ActionLink("Details", "Details", new { id = item.JobTitleID }, new { @class = "btn btn-info" }) 
+                        @Html.ActionLink("Delete", "Delete", new { id = item.JobTitleID }, new { @class = "btn btn-danger" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

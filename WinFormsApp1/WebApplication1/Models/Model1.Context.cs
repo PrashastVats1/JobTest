@@ -26,5 +26,6 @@ namespace WebApplication1.Models
         }
     
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<JobTitle> JobTitles { get; set; }
     }
 }

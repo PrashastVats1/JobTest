@@ -1,0 +1,15 @@
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\bin\Debug\EmployeeForm.exe.config
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\bin\Debug\EmployeeForm.exe
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\bin\Debug\EmployeeForm.pdb
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\obj\Debug\EmployeeForm.csproj.AssemblyReference.cache
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\obj\Debug\EmployeeForm.AddEmployeeForm.resources
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\obj\Debug\EmployeeForm.Properties.Resources.resources
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\obj\Debug\EmployeeForm.csproj.GenerateResource.cache
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\obj\Debug\EmployeeForm.csproj.CoreCompileInputs.cache
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\obj\Debug\EmployeeForm.exe
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\obj\Debug\EmployeeForm.pdb
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\bin\Debug\EntityFramework.dll
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\bin\Debug\EntityFramework.xml
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Test\JobTest\WinFormsApp1\EmployeeForm\obj\Debug\EmployeeForm.csproj.CopyComplete
